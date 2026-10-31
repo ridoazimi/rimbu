@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rimbu | Kaos Kaki Serat Bambu Anti Bau</title>
+<meta name="description" content="Rimbu menjual kaos kaki serat bambu yang tebal dan tidak bau dipakai seharian. Paket isi 3 pasang Rp33.900.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4ee;--card:#fff;--ink:#1d2a22;--ink2:#4b5a50;--mute:#7c8a80;--line:#e3e0d6;--g:#2f5d43;--g2:#e4ede5;--clay:#b8643a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px}
+a{color:inherit}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Fraunces',serif;line-height:1.2}
+h2{font-size:30px;margin-bottom:8px}
+.sub{color:var(--ink2);margin-bottom:28px;max-width:620px}
+section{padding:64px 0;border-top:1px solid var(--line)}
+/* nav */
+header{position:sticky;top:0;background:rgba(246,244,238,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:var(--g);text-decoration:none}
+.nav ul{display:flex;gap:24px;list-style:none;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--ink2)}
+.nav ul a:hover{color:var(--g)}
+.btn{display:inline-block;background:var(--g);color:#fff;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:600;border:0;cursor:pointer;font-size:15px}
+.btn.o{background:transparent;color:var(--g);border:1.5px solid var(--g)}
+.burger{display:none;background:none;border:0;font-size:26px;cursor:pointer;color:var(--g)}
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:56px 0 64px}
+.hero h1{font-size:46px;margin-bottom:16px}
+.hero p{color:var(--ink2);font-size:18px;margin-bottom:24px}
+.facts{display:flex;gap:28px;margin-top:28px;font-size:14px;color:var(--ink2)}
+.facts b{display:block;font-size:20px;color:var(--ink)}
+.art{background:var(--g2);border-radius:16px;padding:24px}
+/* produk */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.card .im{background:var(--g2);padding:18px;display:flex;justify-content:center}
+.card .bd{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:20px}
+.price{font-size:22px;font-weight:700;color:var(--g)}
+.price s{font-size:14px;color:var(--mute);font-weight:400;margin-left:6px}
+.spec{font-size:14px;color:var(--ink2);list-style:none}
+.spec li{padding:3px 0;border-bottom:1px dashed var(--line)}
+.stok{font-size:13px;color:var(--clay);font-weight:600}
+.card .btn{margin-top:auto;text-align:center}
+.tag{display:inline-block;font-size:12px;background:#f3e4da;color:var(--clay);padding:2px 8px;border-radius:4px;font-weight:600;width:fit-content}
+/* tabel ukuran */
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:15px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--g2);font-weight:600}
+/* why */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.list{list-style:none}
+.list li{padding:14px 0;border-bottom:1px solid var(--line)}
+.list b{display:block}
+.list span{color:var(--ink2);font-size:15px}
+/* ulasan */
+.rv{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+.st{color:#d99a1e;letter-spacing:2px;font-size:15px}
+.rv p{margin:10px 0;color:var(--ink2);font-size:15px}
+.rv small{color:var(--mute)}
+.score{display:flex;align-items:baseline;gap:10px;margin-bottom:24px}
+.score b{font-family:'Fraunces',serif;font-size:44px;color:var(--g)}
+/* kebijakan */
+details{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:0 18px}
+summary{cursor:pointer;padding:16px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:'+';color:var(--g);font-size:20px}
+details[open] summary::after{content:'−'}
+details div{padding:0 0 16px;color:var(--ink2);font-size:15px}
+details ol,details ul{padding-left:20px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.steps div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;font-size:15px;color:var(--ink2)}
+.steps div::before{counter-increment:s;content:counter(s);display:flex;width:30px;height:30px;border-radius:50%;background:var(--g);color:#fff;align-items:center;justify-content:center;font-weight:700;margin-bottom:10px}
+.steps b{color:var(--ink);display:block}
+/* kontak */
+.kontak{background:var(--g);color:#e9f1ea;border-radius:16px;padding:36px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px}
+.kontak h2{color:#fff}
+.kontak .btn{background:#fff;color:var(--g)}
+.kontak dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:15px}
+.kontak dt{opacity:.75}
+/* footer */
+footer{background:#1d2a22;color:#c9d3cb;padding:44px 0 24px;font-size:14px;margin-top:64px}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer ul{list-style:none}
+footer li{padding:3px 0}
+footer a{text-decoration:none}
+.pay{display:flex;flex-wrap:wrap;gap:6px}
+.pay span{background:#fff;color:#1d2a22;font-weight:700;font-size:12px;padding:4px 8px;border-radius:4px}
+.soc{display:flex;gap:10px}
+.soc a{width:36px;height:36px;border-radius:50%;background:#2c3d32;display:flex;align-items:center;justify-content:center}
+.soc svg{width:18px;height:18px;fill:#fff}
+.legal{border-top:1px solid #2c3d32;margin-top:28px;padding-top:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:#8d9a90;font-size:13px}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#25d366;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.2);z-index:20}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+@media(max-width:860px){
+ .nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg);flex-direction:column;padding:16px 20px;border-bottom:1px solid var(--line)}
+ .nav ul.on{display:flex}
+ .burger{display:block}
+ .nav .btn{display:none}
+ .hero,.two,.kontak{grid-template-columns:1fr}
+ .hero h1{font-size:34px}
+ .grid{grid-template-columns:1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .fg{grid-template-columns:1fr 1fr}
+ section{padding:48px 0}
+ h2{font-size:26px}
+ .kontak{padding:24px}
+ table{font-size:14px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+ <defs>
+  <symbol id="sock" viewBox="0 0 120 150">
+   <path d="M38 6h44v70c0 6 3 10 8 14l14 11c12 9 13 26 2 36-9 9-23 9-33 1L35 110c-9-7-13-16-13-27V6z" fill="currentColor"/>
+   <path d="M38 6h44v18H38z" fill="#fff" opacity=".35"/>
+   <path d="M38 30h44M38 36h44" stroke="#fff" stroke-width="2" opacity=".3"/>
+   <path d="M71 133c8 5 18 4 25-3 7-7 7-18 0-25" fill="none" stroke="#fff" stroke-width="5" opacity=".35"/>
+   <path d="M54 52c6-5 14-4 18 2-4 7-12 8-18-2z" fill="#fff" opacity=".45"/>
+   <path d="M56 54c5 0 9 1 13 2" stroke="currentColor" stroke-width="1.2" opacity=".6"/>
+  </symbol>
+ </defs>
+</svg>
+
+<header>
+ <div class="w nav">
+  <a href="#" class="logo">
+   <svg width="30" height="30" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#2f5d43"/><path d="M16 7c-5 4-7 9-5 14 1 3 3 4 5 4s4-1 5-4c2-5 0-10-5-14z" fill="#e4ede5"/><path d="M16 11v14" stroke="#2f5d43" stroke-width="1.6"/></svg>
+   Rimbu
+  </a>
+  <ul id="menu">
+   <li><a href="#produk">Produk</a></li>
+   <li><a href="#ukuran">Ukuran</a></li>
+   <li><a href="#ulasan">Ulasan</a></li>
+   <li><a href="#tentang">Tentang Kami</a></li>
+   <li><a href="#kebijakan">Kebijakan</a></li>
+   <li><a href="#kontak">Kontak</a></li>
+  </ul>
+  <a class="btn" href="#produk">Lihat Paket</a>
+  <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('on')">☰</button>
+ </div>
+</header>
+
+<main class="w">
+ <div class="hero">
+  <div>
+   <h1>Kaos kaki serat bambu yang tidak bau dipakai seharian.</h1>
+   <p>Untuk kamu yang kuliah atau kerja pakai sepatu dari pagi sampai sore. Bahannya tebal, menyerap keringat, dan warnanya kami jamin sama dengan pesananmu.</p>
+   <a class="btn" href="#produk">Pilih Paket</a>
+   <a class="btn o" href="#ukuran" style="margin-left:8px">Cek Ukuran</a>
+   <div class="facts">
+    <div><b>75%</b>serat bambu</div>
+    <div><b>39–43</b>ukuran kaki</div>
+    <div><b>3 pasang</b>per paket</div>
+   </div>
+  </div>
+  <div class="art">
+   <svg viewBox="0 0 360 260" width="100%">
+    <rect x="0" y="210" width="360" height="50" fill="#d3e1d5"/>
+    <use href="#sock" x="20" y="40" width="120" height="170" style="color:#2f5d43"/>
+    <use href="#sock" x="120" y="30" width="120" height="180" style="color:#5b6f63"/>
+    <use href="#sock" x="220" y="40" width="120" height="170" style="color:#1d2a22"/>
+    <path d="M300 30c-14 8-20 22-14 34 4 8 12 10 20 6 10-6 10-24-6-40z" fill="#7fa486"/>
+    <path d="M302 36c-4 12-6 22-4 32" stroke="#2f5d43" stroke-width="2" fill="none"/>
+   </svg>
+  </div>
+ </div>
+</main>
+
+<section id="produk">
+ <div class="w">
+  <h2>Pilih paket</h2>
+  <p class="sub">Semua paket berisi kaos kaki serat bambu arang dengan ketebalan sama. Bedanya hanya model dan pilihan warna.</p>
+  <div class="grid">
+   <div class="card">
+    <div class="im"><svg viewBox="0 0 240 150" width="80%"><use href="#sock" x="10" y="0" width="110" height="150" style="color:#1d2a22"/><use href="#sock" x="65" y="0" width="110" height="150" style="color:#5b6f63"/><use href="#sock" x="120" y="0" width="110" height="150" style="color:#2f5d43"/></svg></div>
+    <div class="bd">
+     <span class="tag">Paling laris</span>
+     <h3>Paket Harian (semata kaki)</h3>
+     <div class="price">Rp33.900 <s>Rp39.900</s></div>
+     <ul class="spec">
+      <li>Isi: 3 pasang, warna hitam, abu tua, hijau zaitun</li>
+      <li>Bahan: 75% serat bambu, 20% katun, 5% spandex</li>
+      <li>Ukuran: 39–43, berat 90 gram per paket</li>
+     </ul>
+     <div class="stok">Stok: 48 paket</div>
+     <a class="btn" href="https://wa.me/6281234567890?text=Halo%20Rimbu%2C%20saya%20mau%20pesan%20Paket%20Harian%20(Rp33.900)" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+    </div>
+   </div>
+   <div class="card">
+    <div class="im"><svg viewBox="0 0 240 150" width="80%"><use href="#sock" x="10" y="0" width="110" height="150" style="color:#1d2a22"/><use href="#sock" x="65" y="0" width="110" height="150" style="color:#1d2a22"/><use href="#sock" x="120" y="0" width="110" height="150" style="color:#1d2a22"/></svg></div>
+    <div class="bd">
+     <span class="tag">Untuk kantor</span>
+     <h3>Paket Kerja (sebetis)</h3>
+     <div class="price">Rp39.900</div>
+     <ul class="spec">
+      <li>Isi: 3 pasang, semua hitam polos</li>
+      <li>Bahan: 75% serat bambu, 20% katun, 5% spandex</li>
+      <li>Ukuran: 39–43, berat 120 gram per paket</li>
+     </ul>
+     <div class="stok">Stok: 32 paket</div>
+     <a class="btn" href="https://wa.me/6281234567890?text=Halo%20Rimbu%2C%20saya%20mau%20pesan%20Paket%20Kerja%20(Rp39.900)" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+    </div>
+   </div>
+   <div class="card">
+    <div class="im"><svg viewBox="0 0 240 150" width="80%"><use href="#sock" x="10" y="0" width="110" height="150" style="color:#c9c5b8"/><use href="#sock" x="65" y="0" width="110" height="150" style="color:#8a9b8e"/><use href="#sock" x="120" y="0" width="110" height="150" style="color:#b8643a"/></svg></div>
+    <div class="bd">
+     <span class="tag">Hemat</span>
+     <h3>Paket Isi 6 (semata kaki)</h3>
+     <div class="price">Rp64.900</div>
+     <ul class="spec">
+      <li>Isi: 6 pasang, 6 warna (bisa request di catatan)</li>
+      <li>Bahan: 75% serat bambu, 20% katun, 5% spandex</li>
+      <li>Ukuran: 39–43, berat 180 gram per paket</li>
+     </ul>
+     <div class="stok">Stok: 20 paket</div>
+     <a class="btn" href="https://wa.me/6281234567890?text=Halo%20Rimbu%2C%20saya%20mau%20pesan%20Paket%20Isi%206%20(Rp64.900)" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="ukuran">
+ <div class="w two">
+  <div>
+   <h2>Panduan ukuran</h2>
+   <p class="sub">Satu ukuran untuk kaki 39 sampai 43. Karetnya elastis, jadi tidak melorot di kaki kecil dan tidak sesak di kaki besar.</p>
+   <table>
+    <tr><th>Model</th><th>Ukuran kaki</th><th>Tinggi</th></tr>
+    <tr><td>Semata kaki</td><td>39–43</td><td>14 cm</td></tr>
+    <tr><td>Sebetis</td><td>39–43</td><td>24 cm</td></tr>
+   </table>
+  </div>
+  <div>
+   <h2>Kenapa serat bambu</h2>
+   <ul class="list">
+    <li><b>Tidak bau</b><span>Serat bambu arang menahan bakteri penyebab bau, cocok dipakai dari pagi sampai sore.</span></li>
+    <li><b>Tebal, tidak tembus</b><span>Setiap pasang kami cek dulu. Yang tipis atau bolong tidak kami kirim.</span></li>
+    <li><b>Warna sesuai pesanan</b><span>Isi paket difoto dan dikirim ke WhatsApp-mu sebelum paket diserahkan ke kurir.</span></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section id="cara">
+ <div class="w">
+  <h2>Cara pesan</h2>
+  <p class="sub">Pemesanan lewat WhatsApp, pembayaran lewat transfer bank atau QRIS.</p>
+  <div class="steps">
+   <div><b>Pilih paket</b>Klik "Pesan via WhatsApp" di paket yang kamu mau.</div>
+   <div><b>Kirim alamat</b>Tulis nama, alamat lengkap, dan pilihan warna.</div>
+   <div><b>Bayar</b>Transfer BCA/BRI atau scan QRIS. Total sudah termasuk ongkir.</div>
+   <div><b>Terima foto paket</b>Kami kirim foto isi paket dan nomor resi.</div>
+  </div>
+ </div>
+</section>
+
+<section id="ulasan">
+ <div class="w">
+  <h2>Ulasan pembeli</h2>
+  <div class="score"><b>4,9</b><span class="st">★★★★★</span><span style="color:var(--ink2)">dari 126 ulasan</span></div>
+  <div class="grid">
+   <div class="rv"><div class="st">★★★★★</div><p>Saya pakai buat kerja di gudang, sepatu safety seharian. Pulang kaki tidak bau, beda sama kaos kaki biasa.</p><small>Dimas, Semarang · Paket Kerja</small></div>
+   <div class="rv"><div class="st">★★★★★</div><p>Sebelum dikirim dikasih foto isinya, warnanya pas sama yang aku tulis. Bahannya tebal, tidak menerawang.</p><small>Nadia, Salatiga · Paket Harian</small></div>
+   <div class="rv"><div class="st">★★★★☆</div><p>Nyaman dan adem. Kurang satu bintang karena pilihan warna paket kerja cuma hitam.</p><small>Fajar, Yogyakarta · Paket Kerja</small></div>
+  </div>
+ </div>
+</section>
+
+<section id="tentang">
+ <div class="w two">
+  <div>
+   <h2>Tentang Rimbu</h2>
+   <p style="color:var(--ink2)">Rimbu berawal dari keluhan yang sering kami temukan di ulasan marketplace: kaos kaki datang tipis, warnanya tidak sesuai pesanan, dan jumlah pasangnya kurang. Kami menjual kaos kaki serat bambu dengan satu janji sederhana: yang kamu terima sama dengan yang kamu pesan.</p>
+   <p style="color:var(--ink2);margin-top:12px">Rimbu dikelola dari Salatiga, Jawa Tengah, oleh Rido Azimi.</p>
+  </div>
+  <div>
+   <svg viewBox="0 0 320 200" width="100%"><rect width="320" height="200" rx="14" fill="#e4ede5"/><rect x="40" y="70" width="140" height="100" rx="6" fill="#c9b48f"/><path d="M40 70l70-40 70 40" fill="#b39c74"/><rect x="95" y="105" width="30" height="20" fill="#fff" opacity=".7"/><use href="#sock" x="190" y="40" width="90" height="130" style="color:#2f5d43"/><text x="110" y="160" font-size="11" font-family="Plus Jakarta Sans" text-anchor="middle" fill="#5a4a2e">RIMBU</text></svg>
+  </div>
+ </div>
+</section>
+
+<section id="kebijakan">
+ <div class="w">
+  <h2>Kebijakan toko</h2>
+  <p class="sub">Aturan pengiriman, penukaran, pembayaran, dan privasi.</p>
+  <details open><summary>Pengiriman</summary><div><ul><li>Pesanan yang dibayar sebelum pukul 15.00 WIB dikirim di hari yang sama (Senin–Sabtu).</li><li>Kurir: JNE, J&amp;T, dan SiCepat. Ongkir dihitung sesuai alamat dan dikirim bersama total tagihan.</li><li>Nomor resi dan foto isi paket dikirim lewat WhatsApp.</li></ul></div></details>
+  <details><summary>Penukaran dan pengembalian dana</summary><div><ol><li>Jika warna, jumlah, atau model tidak sesuai, atau kaos kaki bolong, kami ganti gratis termasuk ongkir.</li><li>Klaim paling lambat 3 hari setelah paket diterima, disertai video saat membuka paket.</li><li>Jika stok pengganti habis, dana dikembalikan penuh ke rekening pembeli dalam 2 hari kerja.</li><li>Kaos kaki yang sudah dipakai atau dicuci tidak bisa ditukar karena alasan kebersihan.</li></ol></div></details>
+  <details><summary>Pembayaran</summary><div><ul><li>Transfer bank BCA 0123456789 atau BRI 012301234567890 a.n. Rido Azimi.</li><li>QRIS (semua e-wallet dan m-banking), kode dikirim lewat WhatsApp.</li><li>Pesanan diproses setelah bukti bayar kami terima. Kami tidak pernah meminta kode OTP atau PIN.</li></ul></div></details>
+  <details><summary>Privasi</summary><div>Nama, nomor WhatsApp, dan alamat hanya dipakai untuk memproses dan mengirim pesanan. Data tidak dijual atau dibagikan ke pihak lain selain kurir pengiriman.</div></details>
+ </div>
+</section>
+
+<section id="kontak" style="border-top:0">
+ <div class="w">
+  <div class="kontak">
+   <div>
+    <h2>Ada pertanyaan?</h2>
+    <p style="margin:8px 0 20px">Tanya soal ukuran, warna, atau pesanan grosir untuk seragam kantor. Kami balas setiap hari pukul 08.00–20.00 WIB.</p>
+    <a class="btn" href="https://wa.me/6281234567890?text=Halo%20Rimbu%2C%20saya%20mau%20tanya" target="_blank" rel="noopener">Chat WhatsApp</a>
+   </div>
+   <dl>
+    <dt>WhatsApp</dt><dd>0812-3456-7890</dd>
+    <dt>Email</dt><dd>halo.rimbu@gmail.com</dd>
+    <dt>Alamat</dt><dd>Jl. Lingkar Selatan No. 12, Kel. Cebongan, Kec. Argomulyo, Kota Salatiga, Jawa Tengah 50736</dd>
+    <dt>Jam buka</dt><dd>Senin–Sabtu, 08.00–20.00 WIB</dd>
+   </dl>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="w">
+  <div class="fg">
+   <div>
+    <h4>Rimbu</h4>
+    <p>Kaos kaki serat bambu anti bau untuk kuliah dan kerja.</p>
+    <p style="margin-top:10px">NIB: 3110260037451</p>
+   </div>
+   <div>
+    <h4>Toko</h4>
+    <ul><li><a href="#produk">Produk</a></li><li><a href="#ukuran">Panduan ukuran</a></li><li><a href="#ulasan">Ulasan</a></li><li><a href="#tentang">Tentang kami</a></li></ul>
+   </div>
+   <div>
+    <h4>Bantuan</h4>
+    <ul><li><a href="#kebijakan">Pengiriman</a></li><li><a href="#kebijakan">Penukaran &amp; refund</a></li><li><a href="#kebijakan">Privasi</a></li><li><a href="#kontak">Kontak</a></li></ul>
+   </div>
+   <div>
+    <h4>Pembayaran</h4>
+    <div class="pay"><span>BCA</span><span>BRI</span><span>QRIS</span></div>
+    <h4 style="margin-top:16px">Ikuti kami</h4>
+    <div class="soc">
+     <a href="https://instagram.com/rimbu.socks" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.3 5.5a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM12 2c-2.7 0-3 0-4.1.1C4.3 2.2 2.2 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.6 2.2 5.7 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.1 5.7-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.6-2.2-5.7-5.8-5.8C15 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1 2.7.1 4 1.4 4.1 4.1.1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.7-1.4 4-4.1 4.1-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.7-.1-4-1.4-4.1-4.1-.1-1-.1-1.3-.1-4s0-3 .1-4C3.9 5.3 5.2 4 7.9 3.9c1-.1 1.4-.1 4.1-.1z"/></svg></a>
+     <a href="https://tiktok.com/@rimbu.socks" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 2h-3.3v13.2a2.8 2.8 0 11-2.8-2.8c.3 0 .6 0 .9.1V9.1a6.1 6.1 0 105.2 6.1V8.6a7.6 7.6 0 004.4 1.4V6.7a4.3 4.3 0 01-4.4-4.7z"/></svg></a>
+     <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+    </div>
+   </div>
+  </div>
+  <div class="legal"><span>© 2026 Rimbu. Kota Salatiga.</span><span>Toko ini dibuat untuk tugas UTS E-Commerce Lab.</span></div>
+ </div>
+</footer>
+<a class="wa-float" href="https://wa.me/6281234567890?text=Halo%20Rimbu" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+<script>document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>document.getElementById('menu').classList.remove('on'))</script>
+</body>
+</html>
